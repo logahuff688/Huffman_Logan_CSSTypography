@@ -1,0 +1,74 @@
+/* We typically use one CSS file, named main.css to control all of our pages */
+
+/* this is a class we use to hide headings in our design */
+.hidden {
+  display: none;
+}
+
+#container {
+  width: 428px;
+  margin: 20px auto;
+  border: solid 12px darkgray;
+  box-shadow: black 8px 8px 0px;
+  border-radius: 50px;
+}
+
+#main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 85px);
+  grid-column-gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+article {
+  grid-column: 1/-1;
+}
+
+body {
+  font-family: "Catamaran", arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100px;
+}
+
+p {
+  line-height: 30px;
+  color: grey;
+}
+
+h2,
+h3 {
+  font-family: "Lato", arial, sans-serif;
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  background-color: rgb(75, 75, 75);
+  color: white;
+  padding: 15px;
+  box-shadow: 8px 8px 0px blue;
+}
+
+h3 {
+  font-size: 32px;
+  letter-spacing: 1;
+  color: white;
+  background-color: rgb(75, 75, 75);
+  box-shadow: 8px 8px 0px green;
+}
+
+h2 + p:first-letter {
+  background-color: black;
+  color: white;
+  box-shadow: 1px 1px 0px gray;
+  font-size: larger;
+}
+
+h3 + p::first-letter {
+  background-color: black;
+  color: white;
+  box-shadow: 1px 1px 1px gray;
+  font-size: larger;
+}
